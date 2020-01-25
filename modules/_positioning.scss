@@ -1,0 +1,40 @@
+@mixin center-self {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin center-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin space($direction, $spacing) {
+  @if ($direction == 'right') {
+    margin-right: $spacing;
+    &:nth-last-child(1) {
+      margin-right: 0px;
+    }
+  }
+
+  @if ($direction == 'down') {
+    margin-bottom: $spacing;
+    &:nth-last-child(1) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@mixin media($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin media-alt($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}

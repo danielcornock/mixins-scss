@@ -1,0 +1,25 @@
+@mixin hover($speed: 0) {
+  @if ($speed != 0) {
+    transition: $speed;
+  }
+  &:hover {
+    @content;
+  }
+}
+
+@mixin pseudo($type) {
+  position: relative;
+  @if ($type == 'before') {
+    &::before {
+      content: '';
+      position: absolute;
+      @content;
+    }
+  } @else {
+    &::after {
+      content: '';
+      position: absolute;
+      @content;
+    }
+  }
+}

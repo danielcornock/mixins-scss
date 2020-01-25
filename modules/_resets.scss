@@ -1,0 +1,11 @@
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@mixin default-image {
+  width: 100%;
+  object-fit: cover;
+}
