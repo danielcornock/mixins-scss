@@ -15,5 +15,5 @@ npm install @danielc7150/mixins-scss
 To import these SCSS mixins, at the top of your global SCSS file use:
 
 ```
-@import '@danielc7150/mixins-scss
+@import '@danielc7150/mixins-scss';
 ```

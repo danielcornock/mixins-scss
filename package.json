@@ -6,6 +6,10 @@
   "files": [
     "index.scss"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielcornock/mixins-scss.git"
+  },
   "scripts": {
     "merge": "gulp"
   },
