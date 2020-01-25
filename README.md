@@ -4,13 +4,15 @@ A handful of useful SCSS mixins that can be used across projects.
 
 ## Installation
 
+To install, run:
+
 ```
 npm install @danielc7150/mixins-scss
 ```
 
 ## Usage
 
-Add the top of your main SCSS file, add:
+To import these SCSS mixins, at the top of your global SCSS file use:
 
 ```
 @import '@danielc7150/mixins-scss
